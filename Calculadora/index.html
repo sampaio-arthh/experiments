@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;
+0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Ubuntu:ital,
+wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Financiamento</h1>
+    <h3>Bem vindo</h3>
+    <h4>Por favor, insira as informações</h4>
+    <div class="elementos">
+        <div class="inps">
+            <form id="formy">
+                <input type="text" placeholder="Valor Total" id="value">
+                <input type="text" placeholder="Tempo(meses)" id="time">
+                <input type="text" placeholder="Juros([50% = 50]/[30% = 30])" id="tax">
+            </form>
+        </div>
+        <div class="b-cont">
+            <button type="button" onclick="clean()">Limpar</button>
+            <button type="button" onclick="calc()">Calcular</button>
+        </div>
+        <p id="filler"></p>
+    </div>
+    <div class="foot">
+        <h5>Made by: Arthur Sampaio</h5>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
