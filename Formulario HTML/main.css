@@ -3,6 +3,10 @@ body {
     color: #fefefe;
 }
 
+h1 {
+    font-family: "Nunito", sans-serif;
+}
+
 table {
     border-collapse: collapse;
 }

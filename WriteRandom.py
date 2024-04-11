@@ -19,7 +19,6 @@ def writer(writes, tot):
         writes-=1
         writer(writes, tot)
 
-tot = 0
 med = writer(500, 0)
 
 #####
