@@ -1,3 +1,23 @@
+#Código
+numParticipantes = int(input("Número de participantes do bolão: ")
+numJogos = int(input("Número de jogos: "))
+participantes = []
+resultadosCorretos = [1, 0, 3, 4, 1, 2, 3, 6]
+
+
+for i in range(0, numParticipantes):
+    nomeParticipante = input("Nome do participante")
+    participantes += nomeParticipante
+    resultsProv = []
+    print("Agora, para os chutes do participante")
+    for i in range(0, numJogos):
+        gol = int(input("Gols Time 1: "))
+        resultsProv += gol
+        gol = int(input("Gols Time 2: "))
+        resultsProv += gol
+
+
+#Velho (Revisar e adaptar)
 resultados = [1, 0, 3, 4, 1, 0, 1, 1, 1, 0]
 participantes = []
 bolao = []
