@@ -75,7 +75,17 @@ def calc_e(n, phi_n):
 
     return numeros
 
-#def calc_d(e, phi_n):
+def calc_d(e, phi_n):
+    cont = 0
+    i = 1
+    while cont !=2:
+        if i % e[0] == 0 and i % phi_n == 1:
+            cont+=1
+            i+=1
+        else:
+            i+=1
+    return int((i-1)/e[0])
+        
 
 n = int(input("N = "))
 results = calcP_Q(n)
@@ -84,3 +94,9 @@ phi_n = phi(n)
 
 e = calc_e(n, phi_n)
 print(f" print e: {e}")
+d = calc_d(e, phi_n)
+print(f" print d: {d}")
+
+def decrypt(d, n, msg):
+    dec = msg**d
+    dec %= n
