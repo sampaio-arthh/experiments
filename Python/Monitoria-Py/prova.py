@@ -50,7 +50,7 @@ print()
 
 # previsões dos participantes
 for i in range(qtdJog):
-    print(f"Bolão do {matrPrin[0][i]}: ")
+    print(f"\n Bolão do {matrPrin[0][i]}: ")
     previsoes = []
     inputJogos(times, previsoes)
     prevBol.append(previsoes)
@@ -64,5 +64,8 @@ for i in range(qtdJog):
 for i in range(qtdJog):
     print(f"\n{matrPrin[0][i]} - Pontos: {matrPrin[2][i]}")
 
-print("\nMatriz final:")
-print(matrPrin)
+venc = matrPrin[2].index(max(matrPrin[2]))
+
+venc = matrPrin[0][venc]
+
+print(f"Vencedor => {venc}")
