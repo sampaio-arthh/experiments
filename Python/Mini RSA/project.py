@@ -51,8 +51,6 @@ def calc_e(n, phi_n):
         if i in numeros:
             numeros.remove(i)
 
-    print(f"{divisors_prob} = divisors_prob")
-
     listaRem = []
     for i in numeros:
         divisors_i = findPrimeDivisors(i)
@@ -104,7 +102,6 @@ results = calcP_Q(n)
 phi_n = phi(n)
 
 e = calc_e(n, phi_n)
-print(f" print e: {e}")
 
 for el in e:
     enc = encrypt(el, n, msg)
